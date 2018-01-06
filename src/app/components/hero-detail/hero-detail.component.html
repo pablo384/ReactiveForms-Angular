@@ -52,3 +52,7 @@
 
 <p>Form value: {{ heroForm.value | json }}</p>
 <p>Form status: {{ heroForm.status | json }}</p>
+<p>Name value: {{ heroForm.get('name').value }}</p>
+<!-- //To get the state of a FormControl that’s inside a FormGroup, use dot notation to path to the control. -->
+<p>Street value: {{ heroForm.get('address.street').value}}</p>
+<p>Address status: {{ heroForm.get('address').status}}</p>

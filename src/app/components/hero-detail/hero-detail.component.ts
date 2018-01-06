@@ -20,7 +20,7 @@ export class HeroDetailComponent {
       name: ['', Validators.required ], // <--- the FormControl called "name"
       address: this.fb.group({ // <-- the child FormGroup
         street: '',
-        city: '',
+        city: ['', Validators.required ],
         state: '',
         zip: ''
       }),
